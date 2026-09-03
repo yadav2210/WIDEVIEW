@@ -8245,21 +8245,34 @@
 	<script src="wp-content/themes/framek/inc/elementor/motion-fx/assets/main8a54.js?ver=1.0.0"
 		id="framek-elementor-motion-fx-js"></script>
 	<script>
-		/* Replace the four WORK cards with their local production videos. */
+		/* Replace the WORK cards with every local production video. */
 		(function () {
 			var workVideos = [
 				'images/services/WhatsApp Video 2026-08-20 at 16.51.29.mp4',
+				'images/services/WhatsApp Video 2026-08-18 at 15.09.16.mp4',
 				'images/services/0818(1).mp4',
 				'images/services/0818(3).mp4',
 				'images/services/0818.mp4'
 			];
 
-			document.querySelectorAll('#work .project-item-inner').forEach(function (card, index) {
+			var workGrid = document.querySelector('#work .elementor-project-wrapper > .d-grid');
+			if (!workGrid) return;
+
+			var cards = Array.prototype.slice.call(workGrid.querySelectorAll('.project-item-inner'));
+			while (cards.length < workVideos.length && cards.length) {
+				var cardShell = cards[0].closest('.grid-item').cloneNode(true);
+				workGrid.appendChild(cardShell);
+				cards = Array.prototype.slice.call(workGrid.querySelectorAll('.project-item-inner'));
+			}
+
+			cards.forEach(function (card, index) {
 				if (!workVideos[index]) return;
+				var videoUrl = encodeURI(workVideos[index]);
 
 				card.innerHTML = '<div class="project-post-thumbnail">' +
-					'<video class="work-local-video" autoplay muted loop playsinline preload="metadata" aria-label="Wide View Production work video">' +
-					'<source src="' + workVideos[index] + '" type="video/mp4">' +
+					'<video class="work-local-video" autoplay muted loop playsinline controls preload="metadata" aria-label="Wide View Production work video">' +
+					'<source src="' + videoUrl + '" type="video/mp4">' +
+					'<p>Video unavailable. <a href="' + videoUrl + '">Open the video file</a>.</p>' +
 					'</video></div>';
 			});
 
