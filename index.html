@@ -21,9 +21,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link rel='dns-prefetch' href='http://demo2.wpopal.com/' />
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
-	<link rel="alternate" type="application/rss+xml" title="Framek &raquo; Feed" href="feed/index.html" />
-	<link rel="alternate" type="application/rss+xml" title="Framek &raquo; Comments Feed"
-		href="comments/feed/index.html" />
 	<script>
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/demo2.wpopal.com\/framek\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1" } };
 		/*! This file is auto-generated */
@@ -394,8 +391,6 @@
 			line-height: 1.6;
 		}
 	</style>
-	<link rel='stylesheet' id='contact-form-7-css'
-		href='wp-content/plugins/contact-form-7/includes/css/stylesfc7a.css?ver=6.0.6' media='all' />
 	<link rel='stylesheet' id='-css' href='wp-content/plugins/opal-demo/style0899.css?ver=6.8.1' media='all' />
 	<link rel='stylesheet' id='hfe-style-css'
 		href='wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor8066.css?ver=2.4.1'
@@ -468,16 +463,9 @@
 		!function ($) { "use strict"; $(document).ready(function () { $(this).scrollTop() > 100 && $(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"), $(window).scroll(function () { $(this).scrollTop() < 100 ? $(".hfe-scroll-to-top-wrap").fadeOut(300) : $(".hfe-scroll-to-top-wrap").fadeIn(300) }), $(".hfe-scroll-to-top-wrap").on("click", function () { $("html, body").animate({ scrollTop: 0 }, 300); return !1 }) }) }(jQuery);
 		!function ($) { 'use strict'; $(document).ready(function () { var bar = $('.hfe-reading-progress-bar'); if (!bar.length) return; $(window).on('scroll', function () { var s = $(window).scrollTop(), d = $(document).height() - $(window).height(), p = d ? s / d * 100 : 0; bar.css('width', p + '%') }); }); }(jQuery);
 	</script>
-	<link rel="https://api.w.org/" href="wp-json/index.html" />
-	<link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/79.json" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
 	<meta name="generator" content="WordPress 6.8.1" />
 	<link rel="canonical" href="index.html" />
 	<link rel='shortlink' href='index.html' />
-	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-		href="wp-json/oembed/1.0/embedd6c1.json?url=https%3A%2F%2Fdemo2.wpopal.com%2Fframek%2F" />
-	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-		href="wp-json/oembed/1.0/embed4a3b?url=https%3A%2F%2Fdemo2.wpopal.com%2Fframek%2F&amp;format=xml" />
 	<meta name="generator"
 		content="Elementor 3.29.2; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
 	<link rel="icon" type="image/png" href="images\logo\ChatGPT_Image_Aug_15__2026__05_09_07_PM-removebg-preview.png">
@@ -2220,8 +2208,7 @@
 		.client-logo-card--studio { font-size: clamp(26px, 2.35vw, 46px); }
 		.client-logo-card--tivo { font-size: clamp(34px, 2.9vw, 56px); }
 		.cinematic-footer__cta { align-self: flex-start; margin-top: 20px; transform: none; }
-		/* Remove the Work section's all-projects call-to-action without affecting the project grid. */
-		.elementor-element-14b8869 { display: none !important; }
+		/* Send the Work section CTA to the static cinematic portfolio page. */
 		@media (max-width: 900px) {
 			.clients-logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 			.client-logo-card { min-height: 220px; }
@@ -2311,190 +2298,7 @@
 			display: none !important;
 		}
 
-		.footer-redesign {
-			max-width: 1500px;
-			margin: 0 auto;
-			padding: 105px 7vw 70px;
-		}
-
-		.footer-redesign__title {
-			margin: 0 0 82px;
-			color: #fff;
-			font-size: clamp(48px, 5.4vw, 88px);
-			font-weight: 700;
-			letter-spacing: -.055em;
-			line-height: .95;
-		}
-
-		.footer-redesign__grid {
-			display: grid;
-			grid-template-columns: minmax(340px, .95fr) minmax(460px, 1.05fr);
-			gap: clamp(56px, 10vw, 185px);
-		}
-
-		.footer-redesign__details {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			align-content: start;
-			gap: 72px 70px;
-		}
-
-		.footer-redesign h3 {
-			margin: 0 0 21px;
-			color: #fff;
-			font-size: 18px;
-			font-weight: 700;
-		}
-
-		.footer-redesign p,
-		.footer-redesign a {
-			color: #fff;
-			font-size: 19px;
-			line-height: 1.38;
-		}
-
-		.footer-redesign p {
-			margin: 0;
-		}
-
-		.footer-redesign a {
-			display: block;
-			width: fit-content;
-			text-decoration: underline;
-			text-underline-offset: 3px;
-		}
-
-		.footer-redesign a:hover,
-		.footer-redesign a:focus {
-			color: #D6AF24;
-		}
-
-		.footer-redesign__links {
-			display: grid;
-			gap: 2px;
-		}
-
-		.footer-contact-form {
-			margin: 0;
-			max-width: none;
-		}
-
-		.footer-contact-form__fields {
-			display: grid;
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-			gap: 26px 30px;
-		}
-
-		.footer-contact-form__field--full {
-			grid-column: 1 / -1;
-		}
-
-		.footer-contact-form label {
-			display: block;
-			margin: 0 0 10px;
-			color: #fff;
-			font-size: 17px;
-			font-weight: 500;
-			letter-spacing: 0;
-		}
-
-		.footer-contact-form input,
-		.footer-contact-form textarea {
-			box-sizing: border-box;
-			width: 100%;
-			border: 1px solid rgba(255, 255, 255, .9);
-			border-radius: 28px;
-			background: transparent;
-			color: #fff;
-			font: inherit;
-			padding: 14px 18px;
-			transition: border-color .2s, background .2s;
-		}
-
-		.footer-contact-form textarea {
-			min-height: 116px;
-			border-radius: 24px;
-			resize: vertical;
-		}
-
-		.footer-contact-form input:focus,
-		.footer-contact-form textarea:focus {
-			outline: none;
-			border-color: #D6AF24;
-			background: rgba(255, 255, 255, .08);
-		}
-
-		.footer-contact-form input::placeholder,
-		.footer-contact-form textarea::placeholder {
-			color: rgba(255, 255, 255, .55);
-		}
-
-		.footer-contact-form input:user-invalid,
-		.footer-contact-form textarea:user-invalid {
-			border-color: #e67171;
-		}
-
-		.footer-contact-form button {
-			min-width: 316px;
-			margin-top: 30px;
-			border: 1px solid #fff;
-			border-radius: 28px;
-			background: transparent;
-			color: #fff;
-			cursor: pointer;
-			font-size: 17px;
-			font-weight: 500;
-			padding: 14px 27px;
-			transition: background .2s, color .2s;
-		}
-
-		.footer-contact-form button:hover,
-		.footer-contact-form button:focus {
-			border-color: #D6AF24;
-			background: #D6AF24;
-			color: #050505;
-			outline: none;
-		}
-
-		.footer-contact-form__status {
-			min-height: 22px;
-			margin: 12px 0 0;
-			color: #D6AF24;
-			font-size: 14px;
-		}
-
-		@media (max-width: 900px) {
-			.footer-redesign {
-				padding: 75px 6vw 55px;
-			}
-
-			.footer-redesign__title {
-				margin-bottom: 55px;
-			}
-
-			.footer-redesign__grid {
-				grid-template-columns: 1fr;
-				gap: 55px;
-			}
-		}
-
 		@media (max-width: 600px) {
-
-			.footer-redesign__details,
-			.footer-contact-form__fields {
-				grid-template-columns: 1fr;
-				gap: 28px;
-			}
-
-			.footer-contact-form__field--full {
-				grid-column: auto;
-			}
-
-			.footer-contact-form button {
-				width: 100%;
-				min-width: 0;
-			}
-
 			/* Keep the hero title readable and contained on phone screens. */
 			.elementor-element-5f36da4 .elementor-heading-title {
 				font-size: 3.8rem !important;
@@ -3621,6 +3425,11 @@
 														<a href="#work"><span class="hover-text"
 																data-name="Work">Work</span></a>
 													</li>
+													<li id="menu-item-98"
+														class="menu-item menu-item-type-custom menu-item-object-custom">
+														<a href="/portfolio/"><span class="hover-text"
+																data-name="Portfolio">Portfolio</span></a>
+													</li>
 													<!-- <li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#team"><span class="hover-text" data-name="Team" >Team</span></a></li> -->
 													<li id="menu-item-97"
 														class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -4258,7 +4067,7 @@
 												</ul>
 											</div>
 										</div>
-										<form class="intro-inquiry" id="intro-inquiry-form" method="POST" action="https://script.google.com/macros/s/AKfycbyAIL6eeWhdYmivtNDxlmXtcB5ypO8otfyhEdlSPo9LafdPsKwu9NHq1u2Ogm_1zccL/exec">
+										<form class="intro-inquiry" id="intro-inquiry-form" method="POST" action="https://script.google.com/macros/s/AKfycbwB6j1BrqR_W1mH1SFuf-d0nMi_RDfsHadpnHYKmszkaZMYeuT161KPm7gaKwfTTGCz/exec">
 											<input type="hidden" name="website" value="">
 											<h2>Quick Inquiry</h2>
 											<label for="inquiry-name">Name</label>
@@ -4470,7 +4279,7 @@
 
 															<h5 class="elementor-icon-box-title">
 																<span>
-																	Premium Craftsmanship </span>
+																	Premium Cratsmanship </span>
 															</h5>
 
 															<p class="elementor-icon-box-description">
@@ -6095,7 +5904,7 @@
 											data-widget_type="framek-button.default">
 											<div class="elementor-widget-container">
 												<div class="elementor-button-wrapper">
-													<a href="projects/indexa06c.html?project_style=1"
+													<a href="/portfolio/"
 														class="elementor-button-link elementor-button elementor-size-sm"
 														role="button">
 														<span class="elementor-button-content-wrapper">
@@ -7834,7 +7643,7 @@
 					<h3 class="cinematic-footer__title">Explore</h3>
 					<span class="cinematic-footer__rule"></span>
 					<ul class="cinematic-footer__list">
-						<li><a href="about/index.html">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#work">Projects</a></li><li><a href="#introduction">Our Process</a></li><li><a href="#contact">Contact Us</a></li><li><a id="terms-modal-open" href="#terms-modal" aria-haspopup="dialog">Terms and Policies</a></li>
+						<li><a href="#introduction">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#work">Projects</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="#introduction">Our Process</a></li><li><a href="#contact">Contact Us</a></li><li><a id="terms-modal-open" href="#terms-modal" aria-haspopup="dialog">Terms and Policies</a></li>
 					</ul>
 				</div>
 				<div>
@@ -7877,7 +7686,7 @@
 			<button class="quick-inquiry-modal__close" type="button" aria-label="Close Quick Inquiry">&times;</button>
 			<h2 id="quick-inquiry-title">Quick Inquiry</h2>
 			<p class="quick-inquiry-modal__intro">Tell us a little about your project and we’ll get back to you.</p>
-			<form id="quick-inquiry-modal-form" method="POST" action="https://script.google.com/macros/s/AKfycbyAIL6eeWhdYmivtNDxlmXtcB5ypO8otfyhEdlSPo9LafdPsKwu9NHq1u2Ogm_1zccL/exec">
+			<form id="quick-inquiry-modal-form" method="POST" action="https://script.google.com/macros/s/AKfycbwB6j1BrqR_W1mH1SFuf-d0nMi_RDfsHadpnHYKmszkaZMYeuT161KPm7gaKwfTTGCz/exec">
 				<input type="hidden" name="website" value="">
 				<label for="quick-inquiry-name">Name</label>
 				<input id="quick-inquiry-name" name="name" type="text" autocomplete="name" placeholder="Your name" minlength="2" maxlength="100" required>
@@ -7947,6 +7756,8 @@
 								href="#services">Services</a></li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#work">Work</a>
 						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/portfolio/">Portfolio</a>
+						</li>
 						<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#clients">Clients</a>
 						</li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a
@@ -7972,25 +7783,6 @@
 	<script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/framek\/*"},{"not":{"href_matches":["\/framek\/wp-*.php","\/framek\/wp-admin\/*","\/framek\/wp-content\/uploads\/*","\/framek\/wp-content\/*","\/framek\/wp-content\/plugins\/*","\/framek\/wp-content\/themes\/demo-child\/*","\/framek\/wp-content\/themes\/framek\/*","\/framek\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-	<script>
-		(function () {
-			var form = document.getElementById('footer-contact-form');
-			if (!form) return;
-
-			var status = document.getElementById('footer-contact-status');
-			form.addEventListener('submit', function (event) {
-				event.preventDefault();
-				if (!form.checkValidity()) {
-					status.textContent = 'Please complete all fields with valid details.';
-					form.reportValidity();
-					return;
-				}
-
-				status.textContent = 'Thank you! Your message has been received.';
-				form.reset();
-			});
-		}());
-	</script>
 	<script>
 		/* Keep carousel images decorative; do not open Elementor's full-screen lightbox. */
 		(function () {
@@ -8060,7 +7852,7 @@
 		}());
 	</script>
 	<script>
-		const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyAIL6eeWhdYmivtNDxlmXtcB5ypO8otfyhEdlSPo9LafdPsKwu9NHq1u2Ogm_1zccL/exec";
+		const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwB6j1BrqR_W1mH1SFuf-d0nMi_RDfsHadpnHYKmszkaZMYeuT161KPm7gaKwfTTGCz/exec";
 
 		(function () {
 			var forms = document.querySelectorAll('#intro-inquiry-form, #quick-inquiry-modal-form');
@@ -8190,16 +7982,6 @@
 	<script id="wp-i18n-js-after">
 		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
 	</script>
-	<script src="wp-content/plugins/contact-form-7/includes/swv/js/indexfc7a.js?ver=6.0.6" id="swv-js"></script>
-	<script id="contact-form-7-js-before">
-		var wpcf7 = {
-			"api": {
-				"root": "https:\/\/demo2.wpopal.com\/framek\/wp-json\/",
-				"namespace": "contact-form-7\/v1"
-			}
-		};
-	</script>
-	<script src="wp-content/plugins/contact-form-7/includes/js/indexfc7a.js?ver=6.0.6" id="contact-form-7-js"></script>
 	<script src="wp-content/plugins/elementor/assets/js/webpack.runtime.min2801.js?ver=3.29.2"
 		id="elementor-webpack-runtime-js"></script>
 	<script src="wp-content/plugins/elementor/assets/js/frontend-modules.min2801.js?ver=3.29.2"
@@ -8672,11 +8454,20 @@
 		(function () {
 			document.querySelectorAll('a[href]').forEach(function (link) {
 				var href = (link.getAttribute('href') || '').trim();
-				if (!href || href.charAt(0) === '#' || /^(mailto:|tel:)/i.test(href) || href.indexOf('https://mail.google.com/mail/') === 0 || href.indexOf('https://wa.me/') === 0 || href.indexOf('https://www.instagram.com/') === 0 || href.indexOf('https://www.linkedin.com/') === 0 || href.indexOf('https://www.youtube.com/') === 0 || link.hasAttribute('data-elementor-open-lightbox')) return;
+				if (!href || href.charAt(0) === '#' || /^(mailto:|tel:)/i.test(href) || href.indexOf('https://mail.google.com/mail/') === 0 || href.indexOf('https://wa.me/') === 0 || href.indexOf('https://www.instagram.com/') === 0 || href.indexOf('https://www.linkedin.com/') === 0 || href.indexOf('https://www.youtube.com/') === 0 || /portfolio\/?$/.test(href) || href.indexOf('/portfolio') === 0 || link.hasAttribute('data-elementor-open-lightbox')) return;
 				link.setAttribute('href', '#');
 				link.removeAttribute('target');
 			});
 		}());
+		document.addEventListener('click', function (event) {
+			var link = event.target.closest('a[href]');
+			if (!link) return;
+			var href = (link.getAttribute('href') || '').trim();
+			if (href.indexOf('/portfolio') !== 0 && !/portfolio\/?$/.test(href)) return;
+			event.preventDefault();
+			event.stopPropagation();
+			window.location.assign('/portfolio/');
+		}, true);
 	</script>
 </body>
 

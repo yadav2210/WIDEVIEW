@@ -1,0 +1,23 @@
+Wide View Production — Hostinger upload
+=======================================
+
+Upload EVERYTHING inside this folder to public_html
+(not the output folder itself).
+
+The portfolio page is self-contained. You can also open
+portfolio/index.html or Portfolio/dist/index.html directly
+in a browser — keep the index.html, assets/, and images/
+folders together.
+
+Resulting URLs
+--------------
+/              current homepage
+/portfolio/    cinematic portfolio from the Portfolio app
+
+File Manager steps
+------------------
+1. Zip this folder if needed.
+2. In Hostinger hPanel, open File Manager.
+3. Open public_html.
+4. Upload and extract so you see index.html, portfolio/, images/, wp-content/, and wp-includes/ at the top level.
+5. Visit https://your-domain.com/ and https://your-domain.com/portfolio/

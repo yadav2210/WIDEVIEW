@@ -1,0 +1,11 @@
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Serve /portfolio as the cinematic portfolio page
+RewriteRule ^portfolio$ /portfolio/ [R=301,L]
+</IfModule>
+
+Options -Indexes

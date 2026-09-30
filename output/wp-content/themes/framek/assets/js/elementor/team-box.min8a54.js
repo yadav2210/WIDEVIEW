@@ -1,0 +1,1 @@
+!function(){"use strict";jQuery(window).on("elementor/frontend/init",()=>{elementorFrontend.hooks.addAction("frontend/element_ready/framek-team-box.default",e=>{elementorFrontend.elementsHandler.addHandler(framekSwiperBase,{$element:e})})})}();
